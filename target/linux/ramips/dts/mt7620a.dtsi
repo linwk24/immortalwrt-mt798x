@@ -518,6 +518,7 @@
 		status = "disabled";
 	};
 
+	
 	ehci: ehci@101c0000 {
 		#address-cells = <1>;
 		#size-cells = <0>;
@@ -530,13 +531,14 @@
 		phys = <&usbphy>;
 		phy-names = "usb";
 
-		status = "disabled";
+		status = "okay";
 
 		ehci_port1: port@1 {
 			reg = <1>;
 			#trigger-source-cells = <0>;
 		};
 	};
+	
 
 	ohci: ohci@101c1000 {
 		#address-cells = <1>;
@@ -550,7 +552,7 @@
 		phys = <&usbphy>;
 		phy-names = "usb";
 
-		status = "disabled";
+		status = "okay";
 
 		ohci_port1: port@1 {
 			reg = <1>;
